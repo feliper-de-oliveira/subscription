@@ -17,7 +17,7 @@ class ProductAddonFactory extends Factory
             'reference' => $this->faker->word(),
             'status' => $this->faker->randomElement(ProductAddonStatus::values()),
             'price' => $this->faker->numerify('####'),
-            'medatata' => [
+            'metadata' => [
                 'key' => $this->faker->word(),
                 'value' => $this->faker->word(),
             ],

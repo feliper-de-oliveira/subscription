@@ -26,4 +26,9 @@ class Product extends Model
     {
         return $this->hasMany(ProductAddon::class);
     }
+
+    public function subscriptions(): HasMany
+    {
+        return $this->hasMany(Subscription::class);
+    }
 }

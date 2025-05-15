@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Enums\ProjectCurrencyTypes;
 use App\Models\Enums\ProjectStatus;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,6 +16,7 @@ class Project extends Model
     use HasUlids;
 
     protected $casts = [
+        'currency' => ProjectCurrencyTypes::class,
         'status' => ProjectStatus::class,
     ];
 
