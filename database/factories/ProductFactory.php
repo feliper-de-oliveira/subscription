@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Enums\ProductStatus;
 use App\Models\Project;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -15,7 +16,7 @@ class ProductFactory extends Factory
             'name' => $this->faker->word(),
             'description' => $this->faker->sentence(),
             'reference' => $this->faker->word(),
-            'status' => 1,
+            'status' => $this->faker->randomElement(ProductStatus::values()),
             'price' => $this->faker->numerify('####'),
             'metadata' => [
                 'key' => $this->faker->word(),

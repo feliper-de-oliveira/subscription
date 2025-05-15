@@ -21,7 +21,8 @@
         "laravel/horizon": "^5.32",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.0.0",
-        "tallstackui/tallstackui": "^2.0.0"
+        "tallstackui/tallstackui": "^2.0.0",
+        "ext-http": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.15",
